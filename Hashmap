@@ -1,0 +1,60 @@
+//ejemplo de uso de la hash map
+
+package com.map;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ *
+ * @author ShalltearBloodfallen
+ */
+public class Practica1 {
+    public static void main(String[] args) {
+        
+        //se crea un objeto de tipo map en donde se guardaran los personajes meta de un videjuego.
+        Map<Integer, String> PersonajesMeta = new HashMap<>();
+        /*Hash map puede usarse como una lista 
+        que guarda dos variables una como llave y otra como valor.
+        */
+        
+        //aqui usamos el metodo.put para asignarle valores y keys a 5 personajes
+        PersonajesMeta.put(12, "Link...Attk: 295");
+        PersonajesMeta.put(11, "Ganondorf...Attk: 225");
+        PersonajesMeta.put(15, "Bowser...Attk: 381");
+        PersonajesMeta.put(8, "Ike...Attk: 256");
+        PersonajesMeta.put(5, "YoungLink...Attk: 287");
+        
+        System.out.println("Clave de personaje: " + PersonajesMeta.keySet());
+        //el metodo.keySet sirve para traer los valor keys del personaje
+        
+        System.out.println("Nombre de personaje: " +  PersonajesMeta.values());
+        /*el metodo.values sirve para traer el valor de dicha llave en este caso 
+        el nombre del personaje y su poder de ataque.
+        */
+        
+        //este metodo sirve para comprobar si las variables estan vacias con false o true.
+        System.out.println("Clave de personaje: " + PersonajesMeta.isEmpty());
+        
+        
+        //este metodo sirve para darnos el tamaño del hash map en este caso solo 5 personajes
+        System.out.println(PersonajesMeta.size());
+        
+        /*este metodo sirve para comprobar si existe la llave 3 asignada a un valor 
+        en este caso no, ya que ningun personaje tien asiganada esa llave.
+        */
+        System.out.println(PersonajesMeta.containsKey(3));
+        
+        //este metodo se usa para ver si hay algun valor mediante una busqueda en este caso String
+        //y data como resultado un true. ya que si hay un valor que coincide.
+        System.out.println(PersonajesMeta.containsValue("Link...Attk: 295"));
+        
+        //el metodo.equals sirve para comparar una igualdad y arroja un valor de false o true.
+        
+        //con un forEach podemos mostrar todos los ementos en un ciclo o recorrido
+        PersonajesMeta.forEach((k,v)-> System.out.println("Clave de personaje: " + " " + k + "Nombre de peronaje: " + " " + v));
+        
+        
+        //metodo.remove sirve para eliminar un valor asigando a una llave especifica existente.
+    }
+    
+}
