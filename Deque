@@ -1,0 +1,44 @@
+/*La libreria Deque se puede usar como se ve en este ejemplo de una tienda pequeña de videjuegos
+en donde se necesita saber con frecuencia cual fue el primer y ultimo juego vendido, para asi llevar 
+un control el conjunto con el inventario.
+*/
+
+package ejemploDeque;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+public class EjemploUno {
+    public static void main(String[] args) {
+        
+    Deque<String> listaJuegosVendidos = new ArrayDeque<String>();
+    
+    listaJuegosVendidos.addFirst("Call of Duty mw2");//con el metodo.addfirst se puede agregar la ultima entrada, osea la mas reciente.
+    
+    listaJuegosVendidos.add("Halo");
+    listaJuegosVendidos.add("Smash Bros Ultimate");
+    listaJuegosVendidos.add("The Walking Dead");
+    listaJuegosVendidos.add("Destiny");
+    listaJuegosVendidos.add("Diablo 4");
+    listaJuegosVendidos.add("Sekiro");
+    listaJuegosVendidos.add("The Legend Of Zelda");
+    listaJuegosVendidos.add("Fornite");
+    
+    listaJuegosVendidos.addLast("Street Fighter V");//de puede agregar un juego al ultimo.
+    
+    listaJuegosVendidos.getLast();//con .getLast se obtiene el ultimo elemneto en ingresar a la lista.
+        System.out.println("El primer juego vendido en el dia es: " + listaJuegosVendidos.getLast());
+        
+    listaJuegosVendidos.getFirst();//con .getFirst obtenemos el primet elemneto ingresado a la lista.
+        System.out.println("El ultimo juego vendio en el dia es: " + listaJuegosVendidos.getFirst());
+      
+        System.out.println("-------------------------------------------------------");
+        System.out.println("Los juegos vendidos el dia de hoy son los siguientes: ");
+        System.out.println("-------------------------------------------------------");
+        for (String listaJuegosVendido : listaJuegosVendidos) {
+            System.out.println(listaJuegosVendido);
+            
+        }
+      
+    }
+    
+}
