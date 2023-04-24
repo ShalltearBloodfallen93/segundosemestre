@@ -1,3 +1,12 @@
+/*Nombre: Leonardo Daniel Martínez Rosas
+Grupo: 201
+Licenciatura: Ciencia de Datos para Negocios
+palindromo
+*/
+
+
+
+
 package ejerciciosdejavaescuela;
 
 import java.util.*;
