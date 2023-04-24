@@ -1,3 +1,11 @@
+/*Nombre: Leonardo Daniel Martínez Rosas
+Grupo: 201
+Licenciatura: Ciencia de Datos para Negocios
+factorial
+*/
+
+
+
 package ejerciciosdejavaescuela;
 import java.util.Scanner;
 
